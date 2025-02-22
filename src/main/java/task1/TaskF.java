@@ -1,4 +1,4 @@
-
+package task1;
 
 import java.util.*;
 import java.util.function.IntConsumer;
