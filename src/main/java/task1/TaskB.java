@@ -1,4 +1,4 @@
-package task1;
+
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class TaskB {
         int result = n[0];
 
         while (start <= end) {
-            int mid = start + (end - start) / 2;
+            int mid = (start + end) / 2;
 
             if (Math.abs(n[mid] - k) < Math.abs(result - k))
                 result = n[mid];
@@ -30,8 +30,6 @@ public class TaskB {
 
             if (n[mid] < k)
                 start = mid + 1;
-            else if (n[mid] == k)
-                return n[mid];
             else
                 end = mid - 1;
         }
